@@ -42,6 +42,13 @@ module.exports = appInfo => {
     },
   };
 
+  // cors跨域配置
+  config.cors = {
+    origin: '*',
+    credentials: true,
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
